@@ -85,8 +85,8 @@
                         <ColumnDefinition Width="8*"/>
                         <ColumnDefinition Width="773*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="lsbOutput" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,52,414,100"/>
-                    <ListBox x:Name="lsbResult" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="386,52,60,100" RenderTransformOrigin="0.52,0.626"/>
+                    <ListBox x:Name="lsbOutput" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,52,414,100" AllowDrop="True" MouseMove="lstUnsorted_MouseMove" Drop="lstUnsorted_Drop"/>
+                    <ListBox x:Name="lsbResult" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="386,52,60,100" RenderTransformOrigin="0.52,0.626" AllowDrop="True" MouseMove="lstSorted_MouseMove" Drop="lstSorted_Drop"/>
                     <Button x:Name="btnHelp" Grid.Column="2" Content="?" HorizontalAlignment="Left" Margin="712,12,0,0" VerticalAlignment="Top" Width="35" Height="35" Background="#FFB5B5B5" BorderBrush="#FFB5B5B5" FontWeight="Bold" FontFamily="Arial Black" Click="btnHelp_Click"/>
                     <Button x:Name="btnCheck" Grid.Column="2" Content="Check" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Height="45" Width="300" Foreground="White" BorderBrush="#FF36B2DC" Background="#FF36B2DC" FontFamily="Arial" FontWeight="Bold" Click="btnCheck_Click"/>
                 </Grid>
